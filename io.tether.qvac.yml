@@ -57,9 +57,6 @@ modules:
     buildsystem: simple
     build-commands:
       - |
-        if ! grep -q 'type="vcs-browser"' io.tether.qvac.metainfo.xml; then
-          sed -i 's|</component>|  <url type="vcs-browser">https://github.com/flathub/io.tether.qvac</url>\n</component>|' io.tether.qvac.metainfo.xml
-        fi
       - install -Dm644 io.tether.qvac.metainfo.xml /app/share/metainfo/io.tether.qvac.metainfo.xml
       - install -Dm644 io.tether.qvac.png /app/share/icons/hicolor/512x512/apps/io.tether.qvac.png
       - install -Dm644 io.tether.qvac.desktop /app/share/applications/io.tether.qvac.desktop
