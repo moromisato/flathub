@@ -19,7 +19,6 @@ finish-args:
   - --env=ELECTRON_TRASH=gio
   - --env=GTK_USE_PORTAL=1
   - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
-  - --talk-name=org.freedesktop.ScreenSaver
   # Secret Service access so Electron safeStorage can encrypt the credential
   # vault with the host keyring (OAuth tokens for connected skills). Without it
   # the app falls back to an on-disk app-managed key; with it the key stays in
